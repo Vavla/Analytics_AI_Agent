@@ -8,7 +8,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv()
+load_dotenv(override=True)
 
 def check_prompt_injection(text):
     bad_phrases = [
